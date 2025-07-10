@@ -934,7 +934,6 @@ class helper_plugin_include extends DokuWiki_Plugin { // DokuWiki_Helper_Plugin
                 '@PWEEK@' => date('W',strtotime("-1 week")),
                 '@NWEEK@' => date('W',strtotime("+1 week")),
                 '@YEARNWEEK@' => date('YW',strtotime("+1 week")),
-                '@PARENTID@' => $parent_id,
                 );
         return str_replace(array_keys($replace), array_values($replace), $id);
     }
